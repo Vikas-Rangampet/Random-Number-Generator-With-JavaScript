@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random number guessing game</title>
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+
+</style>
+
+</head>
+
+
+<body>
+
+  
+<div class="title">
+  <h1 id="h1">HI GUYS WELCOME </h1>
+
+ </div>
+
+<h2 id="h2">RULES:USER SHOULD ENTER ANY NUMBER BETWEEN 1-5</h2>
+
+<P1 id="P1">ALL THE BEST....</P1>
+<input id="val" type="text"/>
+<button id="press">SUBMIT</button>
+
+<script>
+
+var usernumber=0;
+document.getElementById("press").onclick=function(){
+     usernumber =document.getElementById("val").value; //stores user enterd number
+     var computernumber=Math.floor(Math.random()*5)+1; //js inbulit method *5 coz only upto 5 and +1 because starts from 1 
+     if(usernumber==computernumber){
+        alert("YAHOOOOO.......YOU WON THE GAME");
+     }
+     else{
+        alert("Ooops............sorry try again");
+     }
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
